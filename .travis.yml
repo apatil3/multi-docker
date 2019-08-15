@@ -22,3 +22,18 @@ after_success:
   - docker push apatil3/multi-nginx
   - docker push apatil3/multi-server
   - docker push apatil3/multi-worker
+
+  # deploy section
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-1-423951603323
+  bucket_path: docker-react
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
+
