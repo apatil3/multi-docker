@@ -23,7 +23,7 @@ after_success:
   - docker push apatil3/multi-server
   - docker push apatil3/multi-worker
 
-  # deploy section
+  # deploy section 
 deploy:
   provider: elasticbeanstalk
   region: us-east-1
