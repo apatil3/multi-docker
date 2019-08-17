@@ -30,7 +30,7 @@ deploy:
   app: multi-docker-new
   env: MultiDockerNew-env
   bucket_name: elasticbeanstalk-us-east-1-423951603323
-  bucket_path: resources
+  bucket_path: resources/environments/e-rw4f53wvqr/_runtime/_embedded_extensions/multi-docker-new/f29338135f8a748309894665332344ac
   on:
     branch: master
   access_key_id: 
